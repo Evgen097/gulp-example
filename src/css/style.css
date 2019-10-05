@@ -1,0 +1,51 @@
+
+.wrap{
+	max-width: 960px;
+	margin: 0 auto;
+	height: 100%;
+	padding: 0 5px;
+	overflow: hidden;
+	background: orange;
+	padding: 100px;
+}
+
+section.profit{
+	background: #232324;
+	padding: 15px 0;
+}
+
+section.profit .item{
+	border: 3px solid #fff;
+	text-align: center;
+	background: #fff;
+}
+
+section.profit .item .text{
+	text-align: left;
+	font-style: italic;
+}
+
+.wrap{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.item{
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 400px;
+	margin: 10px;
+	flex-grow: 1;
+}
+
+.img{
+	flex-basis: 100px;
+	flex-grow: 1;
+}
+
+.text{
+	margin-left: 10px;
+	flex-basis: 290px;
+	flex-grow: 3;
+}
+/* positions */

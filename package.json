@@ -1,0 +1,26 @@
+{
+  "name": "hw3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "gulp watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-uncss": "^1.0.6"
+  },
+  "dependencies": {
+    "del": "^5.1.0",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "normalize.css": "^8.0.1"
+  }
+}
