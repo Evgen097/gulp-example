@@ -26,9 +26,7 @@ let styles = ()=> {
     return gulp.src(cssFiles)
         .pipe(sourcemaps.init())
         .pipe(concat('style.css'))
-        .pipe(uncss({
-            html: ['./src/index.html']
-        }))
+        // .pipe(uncss({html: ['./src/index.html']}))
         .pipe(gcmq())
         .pipe(autoprefixer({
             browsers: ['> 0.1%'],
