@@ -1,0 +1,72 @@
+
+@import "base.less";
+
+.size(@n){
+	@media screen and (max-width: 800px){
+		background: aqua;
+	}
+}
+
+.wrap{
+
+	@back: orange;
+	@pading: 5px;
+
+	max-width: 960px;
+	margin: 0 auto;
+	height: 100%;
+	padding: 0 @pading;
+	overflow: hidden;
+	background: @back;
+	padding: 100px;
+}
+
+section.profit{
+	background: #232324;
+	padding: 15px 0;
+
+	.item{
+		border: 3px solid #fff;
+		text-align: center;
+		background: #fff;
+
+		.text{
+			text-align: left;
+			font-style: italic;
+		}
+	}
+
+	.item{
+		display: flex;
+		flex-wrap: wrap;
+		flex-basis: 400px;
+		margin: 10px;
+		flex-grow: 1;
+	}
+
+	.wrap{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+
+	.img{
+		flex-basis: 100px;
+		flex-grow: 1;
+	}
+
+	.text{
+		margin-left: 10px;
+		flex-basis: 290px;
+		flex-grow: 3;
+
+		&:hover{
+			background: pink;
+		}
+		.size(2)
+	}
+}
+
+
+
+

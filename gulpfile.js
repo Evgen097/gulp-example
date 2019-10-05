@@ -6,14 +6,13 @@ var browserSync = require('browser-sync').create();
 var concat = require('gulp-concat');
 let cleanCSS = require('gulp-clean-css');
 var sourcemaps = require('gulp-sourcemaps');
-var uncss = require('gulp-uncss');
 var gcmq = require('gulp-group-css-media-queries');
+var less = require('gulp-less');
 
 
 let cssFiles = [
     './node_modules/normalize.css/normalize.css',
-    './src/css/base.css',
-    './src/css/style.css'
+    './src/css/style.less'
 ];
 
 // pipe(sourcemaps.init())
@@ -24,6 +23,7 @@ let cssFiles = [
 let styles = ()=> {
     console.log('Styles')
     return gulp.src(cssFiles)
+        .pipe(less())
         .pipe(sourcemaps.init())
         .pipe(concat('style.css'))
         // .pipe(uncss({html: ['./src/index.html']}))
